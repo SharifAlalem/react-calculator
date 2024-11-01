@@ -1,0 +1,43 @@
+.numbers {
+    width: 80%;
+
+    .numbers-list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        column-gap: 20px;
+        row-gap: 10px;
+
+        .number {
+            width: 81px;
+            height: 81px;
+            background-color: black;
+            border: 1px solid white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.604);
+                -webkit-box-shadow:inset 0px 0px 0px 3px white;
+                -moz-box-shadow:inset 0px 0px 0px 3px white;
+                box-shadow:inset 0px 0px 0px 3px white;
+                cursor: pointer;
+            }
+
+            &:nth-last-child(-n+2) {
+                width: 91*2px;
+            }
+
+            &:last-child {
+                width: 81px;
+            }
+        }
+    }
+}
