@@ -7,11 +7,16 @@
     flex-wrap: wrap;
 
     .calculator-base {
-        background-color: gray;
+        background-color: rgba(0,0,0,.3);
         height: fit-content;
-        width: 22%;
+        width: 413px;
         border-radius: 10px;
         border: 1px solid white;
+        box-shadow: -2px 5px 10px .002px rgba(0, 0, 0, 0.394);
+
+        @media (max-width: 768px) {
+            width: 313px;
+        }
 
         .row {
             display: flex;
